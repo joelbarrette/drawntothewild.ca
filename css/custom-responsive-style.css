@@ -74,6 +74,16 @@
   #About:after {
     display: none;
   }
+  
+  #Comm .about-wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+  }
+  #Comm:after {
+    display: none;
+  }
+  
   /* testimonial slider style */
   #Testimonial .testimonial-slider li br {
     display: none;
