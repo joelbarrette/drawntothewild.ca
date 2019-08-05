@@ -160,7 +160,7 @@ ul, li {
 }
 #Header .main-menu li a {
 	position: relative;
-	font-size: 16px;
+	font-size: 18px;
 	color: #fff;
 	padding: 45px 10px;
 }
@@ -472,7 +472,7 @@ ul, li {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: url("../images/about-us-4.jpg") no-repeat center / cover;
+	background: url("../images/about-me.jpg") no-repeat center / cover;
 	width: 50%;
 	height: 100%;
 	
