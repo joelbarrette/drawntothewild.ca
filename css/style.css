@@ -44,7 +44,7 @@ ul, li {
 	font-size: 30px;
 	font-weight: normal;
 	line-height: 1.2;
-	margin: 0 0 20px;
+	margin: 0 0 0px;
 }
 #MainContainer h2 {
 	font-family: 'Montserrat', sans-serif;
@@ -162,7 +162,7 @@ ul, li {
 	position: relative;
 	font-size: 16px;
 	color: #fff;
-	padding: 15px 10px;
+	padding: 45px 10px;
 }
 #Header .main-menu li a::before {
   content: "";
@@ -289,7 +289,7 @@ ul, li {
 }
 #HeroBanner .hero-content {
 	display: table-cell;
-	background-color: rgba(10,40,60,0.15);
+	background-color: rgba(10,40,60,0.25);
 	text-align: left;
 	vertical-align: bottom;
 	padding: 0 15px;
@@ -299,7 +299,7 @@ ul, li {
 	font-size: 48px;
 	color: #fff;
 /*	text-transform: uppercase; */
-	margin: 0 0 20px;
+	margin: 0 0 0px;
 }
 #HeroBanner .hero-content p {
 	font-size: 28px;
@@ -385,7 +385,7 @@ ul, li {
 /* porfolio style goes here */
 #Portfolio {
 	background-color: #fafafa;
-	padding: 10px 0;
+	padding: 0px 0;
 }
 #Portfolio .block-heading p:last-of-type {
 	margin: 0;
