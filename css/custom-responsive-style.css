@@ -1,6 +1,13 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
   /* header style */
+  #index-body {
+	background-image:url("../images/p-vertical.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+  
+  
   #Header .mobile-menu ul li {
     list-style: none;
     padding: 0 0 20px 20px; 

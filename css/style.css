@@ -104,6 +104,7 @@ ul, li {
 	width: 100%;
 	transition: all 0.3s ease-in-out;
 	z-index: 9;
+	padding-top: 8px;
 }
 #Header.header-fixed {
 	background: rgba(0, 0, 0, 0.8);
@@ -130,7 +131,7 @@ ul, li {
 	transition: all 0.3s ease-in-out;
 }
 #Header .site-logo-wrap {
-	width: 30%;
+	/*width: 30%;*/
 	float: left;
 	padding: 30px 0;
 	transition: all 0.3s ease-in-out;
@@ -147,10 +148,10 @@ ul, li {
 	width: 80px;
 }
 #Header .main-menu {
-	width: 70%;
+	width: 90%;
 	text-align: right;
 	float: right;
-	padding: 30px 0;
+	padding-top: 55px;
 	transition: all 0.3s ease-in-out;
 }
 #Header .main-menu li {
@@ -162,7 +163,6 @@ ul, li {
 	position: relative;
 	font-size: 18px;
 	color: #fff;
-	padding: 45px 10px;
 }
 #Header .main-menu li a::before {
   content: "";
@@ -286,13 +286,14 @@ ul, li {
 	height: 15vh;
 	background: url()no-repeat 0 0 / cover;
 	background-attachment: fixed;
+
 }
 #HeroBanner .hero-content {
 	display: table-cell;
-	background-color: rgba(10,40,60,0.25);
+	background-color: rgba(0, 0, 0, 0.9);
 	text-align: left;
 	vertical-align: bottom;
-	padding: 0 15px;
+	padding: 10px 15px;
 }
 #HeroBanner .hero-content h1 {
 	font-family: 'Montserrat', sans-serif;
@@ -332,6 +333,12 @@ ul, li {
 #Services .block-heading p:last-of-type {
 	margin: 0;
 }
+#index-body {
+	background-image:url("../images/p-six.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
 #Services .services-wrapper {
 	display: -webkit-flex;
 	display: flex;
@@ -384,8 +391,8 @@ ul, li {
 }
 /* porfolio style goes here */
 #Portfolio {
-	background-color: #fafafa;
-	padding: 0px 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	padding: 15px 0;
 }
 #Portfolio .block-heading p:last-of-type {
 	margin: 0;
@@ -401,14 +408,27 @@ ul, li {
 }
 #Portfolio .each-portfolio img {
 	width: 100%;
-	height: auto;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	vertical-align: middle;
+	
+	
+}
+
+#Portfolio .each-portfolio .photo-crop {
+	width: 100%;
+	height: 300px;
+	display: inline-block;
+	
+	
 }
 #Portfolio .each-portfolio .hover-cont-wrap {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 300px;
 	background-color: rgba(54, 128, 120, 0.8);
 	color: #fff;
 	display: block;
@@ -439,6 +459,7 @@ ul, li {
 #Portfolio .each-portfolio .hover-cont-wrap .hover-cont-block {
 	display: block;
 	position: relative;
+	vertical-align; middle;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -670,6 +691,7 @@ ul, li {
 #Footer {
 	background-color: rgba(0, 0, 0, 0.9);
 	padding: 20px 0;
+	
 }
 #Footer .footer-logo-wrap {
 	width: 100%;
