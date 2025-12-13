@@ -334,7 +334,7 @@ ul, li {
 	margin: 0;
 }
 #index-body {
-	background-imageurl("../images/IMG_3353.jpg");
+	background-image:url("../images/IMG_3353.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
 }
@@ -516,7 +516,7 @@ ul, li {
 #Comm:after {
 	content: '';
 	position: absolute;
-	
+	min-width: 200px;
 	top: 0;
 	right: 0;
 	background: url("../images/commissions.jpg") no-repeat center / cover;
