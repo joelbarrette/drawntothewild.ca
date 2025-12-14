@@ -287,6 +287,7 @@ ul, li {
 }
 /*Banner style goes here */
 
+
 #HeroBanner {
     display: flex;
     align-items: flex-end;       /* aligns content at the bottom */
@@ -396,9 +397,12 @@ ul, li {
 #Portfolio {
 	background-color: rgba(0, 0, 0, 0.9);
 	padding: 15px 0;
+	font-size: 14px;
+	color: #fff;
 }
 #Portfolio .block-heading p:last-of-type {
 	margin: 0;
+
 }
 #Portfolio .portfolio-wrapper .each-portfolio {
 	position: relative;
