@@ -96,6 +96,12 @@ ul, li {
 .block-heading p:last-child {
 	margin: 0;
 }
+.social-icon {
+    width: 24px;      /* adjust as needed */
+    height: auto;
+    display: inline-block;
+}
+
 /* Header style goes here */
 #Header {
 	position: fixed;
@@ -280,48 +286,45 @@ ul, li {
   background-color: white;
 }
 /*Banner style goes here */
-#HeroBanner {
-	display: table;
-	width: 100%;
-	height: 15vh;
-	background: url()no-repeat 0 0 / cover;
-	background-attachment: fixed;
 
+#HeroBanner {
+    display: flex;
+    align-items: flex-end;       /* aligns content at the bottom */
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.9);  /* semi-transparent background */
+    position: relative;          /* ensures content sits above background */
+    z-index: 1;
+    padding: 0 15px;             /* optional horizontal padding */
 }
+
 #HeroBanner .hero-content {
-	display: table-cell;
-	background-color: rgba(0, 0, 0, 0.9);
-	text-align: left;
-	vertical-align: bottom;
-	padding: 10px 15px;
+    /* No need for display table-cell anymore */
+    /* Keep padding if needed */
+    padding: 10px 0;
 }
-#HeroBanner .hero-content h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 48px;
-	color: #fff;
-/*	text-transform: uppercase; */
-	margin: 0 0 0px;
+
+/* Clickable logo */
+.logo-link {
+    display: block;             /* makes entire image clickable */
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;                 /* ensures link sits above banner background */
 }
-#HeroBanner .hero-content p {
-	font-size: 28px;
-	color: #fff;
-	margin: 0 0 30px;
+
+.hero-logo {
+    display: block;             /* removes baseline gap */
+    width: 200px;               /* adjust as needed */
+    height: auto;
 }
-#HeroBanner .hero-content .hero-cta {
-	font-size: 22px;
-	color: #fff;
-	text-decoration: none;
-	border: 2px solid #fff;
-	border-radius: 0;
-	display: inline-block;
-	padding: 10px 20px;
-	transition: all 0.3s ease-in-out;
+
+/* Hover effect */
+.logo-link:hover .hero-logo {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
 }
-#HeroBanner .hero-content .hero-cta:hover {
-	background-color: #0098aa;
-	border: 2px solid #0098aa;
-	transition: all 0.3s ease-in-out;
-}
+
 /* services section style goes here */
 #Services {
 	padding: 80px 0 50px;
@@ -481,10 +484,14 @@ ul, li {
 /* about us section style goes here */
 #About {
 	position: relative;
+
+
 }
 #About .about-wrapper {
-	width: 50%;
+
+	width: 60%;
 	padding: 80px 50px 80px 10px;
+	color: #000000;
 }
 #About .about-wrapper p:last-child {
 	margin: 0;
@@ -495,8 +502,8 @@ ul, li {
 	top: 0;
 	right: 0;
 	background: url("../images/about-me.jpg") no-repeat center / cover;
-	width: 50%;
-	height: 100%;
+	width: 40%;
+	height: 50%;
 	
 	
 }
